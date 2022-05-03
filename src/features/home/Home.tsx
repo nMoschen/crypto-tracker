@@ -1,15 +1,18 @@
 import styled from "styled-components"
-import { Favorites } from "../favorites/Favorites";
+import { CoinsList } from "../coinsList";
+import { Favorites } from "../favorites";
 
 const StyleHome = styled.main`
-  flex: 1;
   padding: 40px 30px;
+  display: grid;
+  grid-gap: 40px;
 `;
 
-export const Home = () => {
+export function Home() {
   return (
     <StyleHome>
       <Favorites></Favorites>
+      <CoinsList></CoinsList>
     </StyleHome>
   )
 }
