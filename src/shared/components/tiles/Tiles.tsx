@@ -18,7 +18,7 @@ export const Tiles = () => {
 
   return (
     <StyledTiles>
-      { tiles.map((tile, i) => <Tile {...tile}></Tile>)}
+      { tiles.map((tile, i) => <Tile {...tile} key={i}></Tile>)}
     </StyledTiles>
   )
 }
